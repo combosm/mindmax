@@ -23,13 +23,13 @@ Do not skip ahead unless explicitly instructed.
 # Project Status
 
 Current Phase:
-PHASE 1 — Design System and Planning
+PHASE 2 — Navigation and Hero
 
 Status:
-READY FOR REVIEW
+APPROVED — 2026-09-02
 
 Last Approved Phase:
-NONE
+PHASE 2 — Navigation and Hero
 
 ---
 
@@ -257,9 +257,17 @@ Technical:
 
 ## Status
 
-NOT STARTED
+APPROVED — 2026-09-02
 
 ## Completion Notes
+
+- implemented a compact sticky desktop navigation with the approved MindMax logo and enquiry CTA
+- added a keyboard-accessible responsive mobile navigation with escape-key support
+- created the editorial hero with approved headline, supporting copy and enquiry pathways
+- added an original education-focused hero photograph and restrained MindMax-inspired geometry
+- integrated historical results and establishment date as a divided proof band
+- refined layouts for mobile, tablet and desktop breakpoints
+- lint, typecheck and production build pass
 
 ---
 
