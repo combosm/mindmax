@@ -57,7 +57,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="site-container proof-wrap" id="results">
+        <div className="site-container proof-wrap" id="hero-proof">
           <p className="proof-kicker">A proven record</p>
           <dl className="proof-list">
             {historicalResults.map((result) => (

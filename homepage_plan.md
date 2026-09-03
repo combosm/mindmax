@@ -23,13 +23,13 @@ Do not skip ahead unless explicitly instructed.
 # Project Status
 
 Current Phase:
-PHASE 5 — What Students Learn
+PHASE 6 — Results
 
 Status:
 READY FOR REVIEW — 2026-09-03
 
 Last Approved Phase:
-PHASE 4 — Programs
+PHASE 5 — What Students Learn
 
 ---
 
@@ -479,7 +479,7 @@ Potential composition:
 
 ## Status
 
-READY FOR REVIEW — 2026-09-03
+APPROVED — 2026-09-03
 
 ## Completion Notes
 
@@ -548,9 +548,17 @@ See Our Results →
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-03
 
 ## Completion Notes
+
+- created a dedicated dark results field distinct from the compact hero proof band
+- presented the supported selective school, scholarship and establishment claims at editorial scale
+- reused central business and historical results data without strengthening the approved claims
+- added visible historical-outcomes and non-guarantee wording
+- moved the navigation results target to the full results section
+- added impactful tablet and mobile compositions without stat cards
+- lint, typecheck and production build pass
 
 ---
 
