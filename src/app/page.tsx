@@ -2,6 +2,7 @@ import { Hero } from "@/components/hero";
 import { MindMaxDifference } from "@/components/mindmax-difference";
 import { Programs } from "@/components/programs";
 import { SiteHeader } from "@/components/site-header";
+import { WhatStudentsLearn } from "@/components/what-students-learn";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <MindMaxDifference />
         <Programs />
+        <WhatStudentsLearn />
       </main>
     </div>
   );

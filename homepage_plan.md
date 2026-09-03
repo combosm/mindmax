@@ -23,13 +23,13 @@ Do not skip ahead unless explicitly instructed.
 # Project Status
 
 Current Phase:
-PHASE 4 — Programs
+PHASE 5 — What Students Learn
 
 Status:
 READY FOR REVIEW — 2026-09-03
 
 Last Approved Phase:
-PHASE 3 — MindMax Difference
+PHASE 4 — Programs
 
 ---
 
@@ -391,7 +391,7 @@ Avoid small cards.
 
 ## Status
 
-READY FOR REVIEW — 2026-09-03
+APPROVED — 2026-09-03
 
 ## Completion Notes
 
@@ -412,11 +412,28 @@ Explain the academic areas MindMax teaches.
 
 ## Content
 
-Include:
+Separate the curriculum into three program pathways:
+
+### Regular Program
 
 - Mathematics
-- Numerical / Quantitative Reasoning
 - English
+
+### Selective Entry Program
+
+- exam preparation workshops
+- ACER and EduTest formats
+- numeracy, literacy and reasoning skills
+
+### Scholarship Program
+
+- exam preparation workshops
+- ACER and EduTest formats
+- numeracy, literacy and reasoning skills
+
+Across the exam preparation pathways, include:
+
+- Numerical / Quantitative Reasoning
 - Reading
 - Writing
 - Verbal Reasoning
@@ -430,14 +447,14 @@ Thinking for beyond it.
 
 ## Preferred Grouping
 
-### Numeracy
+### Core Learning
 
 - Mathematics
-- Numerical Reasoning
-
-### Literacy and Reasoning
-
 - English
+
+### Exam Preparation
+
+- Numerical / Quantitative Reasoning
 - Reading
 - Writing
 - Verbal Reasoning
@@ -462,9 +479,17 @@ Potential composition:
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-03
 
 ## Completion Notes
+
+- separated the curriculum into Regular, Selective Entry and Scholarship pathways
+- kept the regular program focused on ongoing Mathematics and English learning
+- identified Selective Entry and Scholarship as distinct exam-preparation programs
+- presented ACER and EduTest workshop formats alongside numeracy, literacy and reasoning areas
+- used a structured editorial curriculum map rather than a repetitive subject-card grid
+- added intentional tablet and mobile layouts
+- lint, typecheck and production build pass
 
 ---
 
