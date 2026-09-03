@@ -1249,9 +1249,101 @@ a {
   font-size: 1.2rem;
 }
 
+.school-carousel {
+  margin-top: clamp(4.5rem, 8vw, 7rem);
+  border-top: 1px solid color-mix(in srgb, white 24%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, white 24%, transparent);
+}
+
+.school-carousel-header {
+  display: flex;
+  min-height: 5.5rem;
+  padding-block: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.school-carousel-header > div:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+}
+
+.school-carousel-header > div:first-child p:first-child {
+  color: white;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.school-carousel-header > div:first-child p:last-child {
+  color: color-mix(in srgb, white 55%, transparent);
+  font-size: 0.72rem;
+}
+
+.school-carousel-viewport {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.school-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: school-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.school-carousel:hover .school-carousel-track,
+.school-carousel:focus-within .school-carousel-track {
+  animation-play-state: paused;
+}
+
+.school-logo-group {
+  display: flex;
+  margin: 0;
+  padding: 0 clamp(3.75rem, 6vw, 5.5rem) 0 0;
+  align-items: center;
+  gap: clamp(3.75rem, 6vw, 5.5rem);
+  list-style: none;
+}
+
+.school-logo-item {
+  display: flex;
+  width: max-content;
+  height: clamp(8rem, 11vw, 10rem);
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-logo-item img {
+  width: auto;
+  max-width: 10rem;
+  height: clamp(4.75rem, 6vw, 5.5rem);
+  filter: grayscale(1) brightness(0) invert(1);
+  opacity: 0.72;
+  object-fit: contain;
+  object-position: center;
+  transition: opacity 220ms ease, transform 220ms ease;
+  transform: scale(var(--logo-scale, 1));
+}
+
+.school-logo-item:hover img,
+.school-logo-item:focus-within img {
+  opacity: 1;
+  transform: scale(calc(var(--logo-scale, 1) + 0.06));
+}
+
+@keyframes school-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .results-record {
   display: grid;
-  margin: clamp(5rem, 10vw, 9rem) 0 0;
+  margin: clamp(4rem, 7vw, 6rem) 0 0;
   border-top: 1px solid color-mix(in srgb, white 24%, transparent);
   border-bottom: 1px solid color-mix(in srgb, white 24%, transparent);
   grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(13rem, 0.58fr);
@@ -1873,6 +1965,27 @@ a {
   .results-note p:last-child {
     text-align: left;
   }
+
+  .school-carousel-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .school-carousel-header > div:first-child {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .school-logo-item {
+    height: 7.5rem;
+  }
+
+  .school-logo-item img {
+    max-width: 8.5rem;
+    height: 4.5rem;
+  }
 }
 
 @media (max-width: 47.999rem) {
@@ -1899,5 +2012,9 @@ a {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .school-carousel-track {
+    animation: none;
   }
 }

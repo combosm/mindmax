@@ -512,6 +512,17 @@ School Scholarships
 Established
 2012
 
+Show historical offer destinations supplied by MindMax, including:
+
+- Melbourne High School
+- The Mac.Robertson Girls' High School
+- Suzanne Cory High School
+- Nossal High School
+- Westbourne Grammar School
+- Bacchus Marsh Grammar
+- Melbourne Grammar School
+- Penleigh and Essendon Grammar School
+
 ## Main Message
 
 Potential direction:
@@ -527,6 +538,7 @@ Use:
 - dark navy or blue field
 - photography where appropriate
 - restrained red emphasis
+- an accessible, continuously scrolling school-logo carousel
 
 Avoid:
 
@@ -558,6 +570,12 @@ READY FOR REVIEW — 2026-09-03
 - added visible historical-outcomes and non-guarantee wording
 - moved the navigation results target to the full results section
 - added impactful tablet and mobile compositions without stat cards
+- added eight supplied school logos as historical offer destinations
+- made the school carousel auto-scroll as a seamless CSS-driven marquee
+- added hover/focus pausing and reduced-motion behaviour without visible controls
+- normalised mixed logo dimensions within consistent optical frames
+- removed individual white tiles in favour of monochrome logos on the navy field
+- clarified that school logos do not imply endorsement
 - lint, typecheck and production build pass
 
 ---

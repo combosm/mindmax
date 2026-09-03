@@ -1,5 +1,6 @@
 import { business } from "@/data/business";
 import { historicalResults, resultsDisclaimer } from "@/data/results";
+import { SchoolCarousel } from "@/components/school-carousel";
 
 export function Results() {
   return (
@@ -13,19 +14,21 @@ export function Results() {
         <header className="results-heading">
           <p className="eyebrow results-eyebrow">Historical student outcomes</p>
           <h2 id="results-title" className="results-title">
-            A track record built
-            <span>over more than a decade.</span>
+            Where focused work
+            <span>can lead.</span>
           </h2>
           <div className="results-context">
             <p>
-              MindMax has supported students working towards selective school entry and
-              scholarship opportunities since {business.establishedYear}.
+              MindMax students have received offers from selective entry and independent
+              schools across Melbourne.
             </p>
             <a href="#results-record">
               See our results <span aria-hidden="true">↓</span>
             </a>
           </div>
         </header>
+
+        <SchoolCarousel />
 
         <dl className="results-record" id="results-record">
           {historicalResults.map((result, index) => (
@@ -47,7 +50,7 @@ export function Results() {
 
         <footer className="results-note">
           <p>{resultsDisclaimer}</p>
-          <p>Results earned over time. Foundations built for what comes next.</p>
+          <p>School logos identify offer destinations and do not imply endorsement.</p>
         </footer>
       </div>
     </section>

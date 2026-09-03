@@ -1,0 +1,58 @@
+export const offerDestinationSchools = [
+  {
+    name: "Melbourne High School",
+    logo: "/images/schools/Melbourne_High_School_(VIC)_Logo_(Background_removed).png",
+    width: 307,
+    height: 325,
+    opticalScale: 1.08,
+  },
+  {
+    name: "The Mac.Robertson Girls' High School",
+    logo: "/images/schools/MacRob-logo-1.webp",
+    width: 318,
+    height: 360,
+    opticalScale: 1.18,
+  },
+  {
+    name: "Suzanne Cory High School",
+    logo: "/images/schools/image-removebg-preview (3).png",
+    width: 447,
+    height: 447,
+    opticalScale: 1.28,
+  },
+  {
+    name: "Nossal High School",
+    logo: "/images/schools/image-removebg-preview (4).png",
+    width: 592,
+    height: 421,
+    opticalScale: 1.18,
+  },
+  {
+    name: "Westbourne Grammar School",
+    logo: "/images/schools/image-removebg-preview (2).png",
+    width: 438,
+    height: 456,
+    opticalScale: 1.1,
+  },
+  {
+    name: "Bacchus Marsh Grammar",
+    logo: "/images/schools/images-removebg-preview.png",
+    width: 433,
+    height: 576,
+    opticalScale: 1,
+  },
+  {
+    name: "Melbourne Grammar School",
+    logo: "/images/schools/logo mgs.svg",
+    width: 202,
+    height: 91,
+    opticalScale: 0.92,
+  },
+  {
+    name: "Penleigh and Essendon Grammar School",
+    logo: "/images/schools/pegs logo.png",
+    width: 490,
+    height: 509,
+    opticalScale: 1.08,
+  },
+] as const;
