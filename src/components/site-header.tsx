@@ -35,10 +35,10 @@ export function SiteHeader() {
           <a className="brand-link" href="#top" aria-label="MindMax Tutoring home">
             <Image
               className="brand-logo"
-              src="/images/mindmax-logo.png"
+              src="/images/mindmax-logo-transparent.png"
               alt="MindMax Tutoring"
-              width={600}
-              height={165}
+              width={1960}
+              height={520}
               priority
             />
           </a>
