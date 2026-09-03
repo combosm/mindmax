@@ -6,8 +6,7 @@ import { historicalResults, resultsDisclaimer } from "@/data/results";
 
 export function Hero() {
   return (
-    <main id="main-content">
-      <section className="hero" aria-labelledby="hero-title">
+    <section className="hero" aria-labelledby="hero-title">
         <div className="site-container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Tutoring for Grades 3–6</p>
@@ -76,7 +75,6 @@ export function Hero() {
           </dl>
           <p className="sr-only">{resultsDisclaimer}</p>
         </div>
-      </section>
-    </main>
+    </section>
   );
 }
