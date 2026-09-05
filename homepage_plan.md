@@ -564,6 +564,9 @@ READY FOR REVIEW — 2026-09-03
 - placed the dedicated dark results field directly below the hero and removed the duplicate hero proof band
 - ordered the section so the large statistics precede the school-logo carousel
 - standardised all three statistics to the same scale, weight, alignment and spacing
+- tightened homepage section spacing and internal content rhythm across desktop and mobile
+- clarified section transitions through the approved ivory, navy and ice-blue surfaces
+- reduced excess spacing within learning-format and curriculum content
 - presented the supported selective school, scholarship and establishment claims at editorial scale
 - reused central business and historical results data without strengthening the approved claims
 - added visible historical-outcomes and non-guarantee wording

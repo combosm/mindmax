@@ -434,7 +434,7 @@ a {
 .difference {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(5.5rem, 10vw, 9rem);
+  padding-block: clamp(5rem, 8vw, 6.75rem);
   background: var(--mindmax-navy);
   color: white;
 }
@@ -463,7 +463,7 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: minmax(18rem, 0.8fr) minmax(30rem, 1.2fr);
-  gap: clamp(4rem, 9vw, 9rem);
+  gap: clamp(3.5rem, 7vw, 6rem);
 }
 
 .difference-intro {
@@ -479,7 +479,7 @@ a {
   max-width: 10ch;
   margin-top: 1.25rem;
   color: white;
-  font-size: clamp(3rem, 5.4vw, 5rem);
+  font-size: clamp(2.75rem, 4.8vw, 4.5rem);
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 0.98;
@@ -492,7 +492,7 @@ a {
 
 .difference-summary {
   max-width: 32rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   color: color-mix(in srgb, white 72%, transparent);
   font-size: clamp(1.0625rem, 1.4vw, 1.2rem);
   line-height: 1.7;
@@ -525,8 +525,8 @@ a {
   position: relative;
   display: grid;
   min-width: 0;
-  min-height: 7.25rem;
-  padding: 1.5rem 0 1.5rem 5.25rem;
+  min-height: 6.5rem;
+  padding: 1.25rem 0 1.25rem 5rem;
   border-bottom: 1px solid color-mix(in srgb, white 15%, transparent);
   align-items: center;
 }
@@ -576,7 +576,7 @@ a {
 
 .difference-closing {
   display: flex;
-  padding-top: 1.75rem;
+  padding-top: 1.25rem;
   border-top: 1px solid color-mix(in srgb, white 24%, transparent);
   grid-column: 1 / -1;
   justify-content: space-between;
@@ -594,7 +594,7 @@ a {
 .programs {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(5.5rem, 10vw, 10rem);
+  padding-block: clamp(5rem, 8vw, 6.75rem);
   background: var(--mindmax-ivory);
 }
 
@@ -613,7 +613,7 @@ a {
   max-width: 12ch;
   margin-top: 1.25rem;
   grid-column: 1 / 8;
-  font-size: clamp(2.75rem, 5vw, 4.75rem);
+  font-size: clamp(2.75rem, 4.8vw, 4.5rem);
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 1;
@@ -627,7 +627,7 @@ a {
 .programs-intro {
   min-width: 0;
   max-width: 27rem;
-  padding-top: 1.75rem;
+  padding-top: 1.25rem;
   border-top: 1px solid color-mix(in srgb, var(--mindmax-navy) 20%, transparent);
   align-self: end;
   grid-column: 9 / -1;
@@ -639,8 +639,8 @@ a {
 
 .program-list {
   display: grid;
-  margin-top: clamp(4.5rem, 8vw, 8rem);
-  gap: clamp(5rem, 10vw, 10rem);
+  margin-top: clamp(3.5rem, 6vw, 4.5rem);
+  gap: clamp(4.5rem, 7vw, 6rem);
 }
 
 .program {
@@ -648,7 +648,7 @@ a {
   min-width: 0;
   grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.72fr);
   align-items: center;
-  gap: clamp(3rem, 7vw, 7rem);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .program:nth-child(even) {
@@ -666,7 +666,7 @@ a {
 
 .program-image-wrap {
   position: relative;
-  padding: 0 2rem 2rem 0;
+  padding: 0 1.25rem 1.25rem 0;
 }
 
 .program-image-wrap::after {
@@ -682,7 +682,7 @@ a {
 }
 
 .program:nth-child(even) .program-image-wrap {
-  padding: 0 0 2rem 2rem;
+  padding: 0 0 1.25rem 1.25rem;
 }
 
 .program:nth-child(even) .program-image-wrap::after {
@@ -747,8 +747,8 @@ a {
 
 .program-content h3 {
   max-width: 11ch;
-  margin-top: 0.75rem;
-  font-size: clamp(2.3rem, 4vw, 3.7rem);
+  margin-top: 0.625rem;
+  font-size: clamp(2.15rem, 3.5vw, 3.25rem);
   font-weight: 800;
   letter-spacing: -0.055em;
   line-height: 1;
@@ -756,7 +756,7 @@ a {
 
 .program-description {
   max-width: 31rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: var(--mindmax-muted);
   font-size: clamp(1.05rem, 1.4vw, 1.15rem);
   line-height: 1.7;
@@ -764,7 +764,7 @@ a {
 
 .program-details {
   display: grid;
-  margin: 2rem 0 0;
+  margin: 1.25rem 0 0;
   padding: 0;
   border-top: 1px solid var(--mindmax-border);
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -811,7 +811,7 @@ a {
 }
 
 .program-content > a {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .program-content > a span {
@@ -827,7 +827,7 @@ a {
 .learning {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(5.5rem, 10vw, 10rem);
+  padding-block: clamp(5rem, 8vw, 6.75rem);
   background: var(--mindmax-ice-blue);
 }
 
@@ -859,7 +859,7 @@ a {
   max-width: 12ch;
   margin-top: 1.25rem;
   grid-column: 1 / 8;
-  font-size: clamp(2.75rem, 5vw, 4.75rem);
+  font-size: clamp(2.75rem, 4.8vw, 4.5rem);
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 1;
@@ -872,7 +872,7 @@ a {
 
 .learning-intro {
   max-width: 28rem;
-  padding-top: 1.75rem;
+  padding-top: 1.25rem;
   border-top: 1px solid color-mix(in srgb, var(--mindmax-navy) 22%, transparent);
   align-self: end;
   grid-column: 9 / -1;
@@ -885,7 +885,7 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  margin-top: clamp(4.5rem, 8vw, 7rem);
+  margin-top: clamp(3.5rem, 6vw, 4.5rem);
   grid-template-columns: minmax(18rem, 0.72fr) minmax(0, 1.28fr);
   gap: 1px;
   background: color-mix(in srgb, var(--mindmax-navy) 20%, transparent);
@@ -899,7 +899,7 @@ a {
 .foundation-pathway {
   display: flex;
   min-width: 0;
-  padding: clamp(2rem, 4.5vw, 4rem);
+  padding: clamp(2rem, 3.5vw, 3rem);
   flex-direction: column;
 }
 
@@ -936,7 +936,7 @@ a {
 
 .pathway-description {
   max-width: 29rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: var(--mindmax-muted);
   font-size: 1rem;
   line-height: 1.7;
@@ -944,7 +944,7 @@ a {
 
 .foundation-subjects {
   margin: auto 0 0;
-  padding: clamp(3rem, 7vw, 6rem) 0 0;
+  padding: clamp(2.5rem, 4vw, 3.5rem) 0 0;
   list-style: none;
 }
 
@@ -967,7 +967,7 @@ a {
 
 .exam-pathways {
   min-width: 0;
-  padding: clamp(2rem, 4.5vw, 4rem);
+  padding: clamp(2rem, 3.5vw, 3rem);
 }
 
 .exam-header {
@@ -999,19 +999,19 @@ a {
 
 .exam-program-list {
   display: grid;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-top: 1px solid var(--mindmax-border);
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .exam-program {
   min-width: 0;
-  padding: 2rem 2rem 2rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .exam-program + .exam-program {
   padding-right: 0;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   border-left: 1px solid var(--mindmax-border);
 }
 
@@ -1024,7 +1024,7 @@ a {
 
 .exam-program h4 {
   max-width: 13ch;
-  margin-top: 1.25rem;
+  margin-top: 0.75rem;
   font-size: clamp(1.5rem, 2.4vw, 2.1rem);
   font-weight: 750;
   letter-spacing: -0.04em;
@@ -1033,7 +1033,7 @@ a {
 
 .exam-program p {
   max-width: 24rem;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   color: var(--mindmax-muted);
   font-size: 0.9rem;
   line-height: 1.65;
@@ -1046,11 +1046,11 @@ a {
 }
 
 .exam-subject-group {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .exam-subject-group + .exam-subject-group {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   border-left: 1px solid var(--mindmax-border);
 }
 
@@ -1085,7 +1085,7 @@ a {
 .results-section {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(6rem, 11vw, 11rem);
+  padding-block: clamp(5rem, 8vw, 6.75rem);
   background: var(--mindmax-navy);
   color: white;
 }
@@ -1144,7 +1144,7 @@ a {
   margin-top: 1.25rem;
   grid-column: 1 / 8;
   color: white;
-  font-size: clamp(3rem, 5.5vw, 5.25rem);
+  font-size: clamp(2.85rem, 5vw, 4.75rem);
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 0.98;
@@ -1157,7 +1157,7 @@ a {
 
 .results-context {
   max-width: 27rem;
-  padding-top: 1.75rem;
+  padding-top: 1.25rem;
   border-top: 1px solid color-mix(in srgb, white 24%, transparent);
   align-self: end;
   grid-column: 9 / -1;
@@ -1176,8 +1176,8 @@ a {
 
 .school-carousel-header {
   display: flex;
-  min-height: 5.5rem;
-  padding-block: 1rem;
+  min-height: 4.5rem;
+  padding-block: 0.75rem;
   align-items: center;
   gap: 2rem;
 }
@@ -1230,7 +1230,7 @@ a {
 .school-logo-item {
   display: flex;
   width: max-content;
-  height: clamp(8rem, 11vw, 10rem);
+  height: clamp(6.5rem, 8vw, 7.5rem);
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
@@ -1239,7 +1239,7 @@ a {
 .school-logo-item img {
   width: auto;
   max-width: 10rem;
-  height: clamp(4.75rem, 6vw, 5.5rem);
+  height: clamp(4rem, 5vw, 4.75rem);
   filter: grayscale(1) brightness(0) invert(1);
   opacity: 0.72;
   object-fit: contain;
@@ -1262,7 +1262,7 @@ a {
 
 .results-record {
   display: grid;
-  margin: clamp(4.5rem, 8vw, 7rem) 0 0;
+  margin: clamp(3.5rem, 6vw, 4.5rem) 0 0;
   border-bottom: 1px solid color-mix(in srgb, white 24%, transparent);
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1272,8 +1272,8 @@ a {
   position: relative;
   display: flex;
   min-width: 0;
-  min-height: clamp(19rem, 28vw, 27rem);
-  padding: clamp(1.75rem, 3vw, 3rem);
+  min-height: clamp(14rem, 18vw, 17rem);
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
   flex-direction: column-reverse;
   justify-content: space-between;
 }
@@ -1297,7 +1297,7 @@ a {
   margin: 0;
   color: white;
   font-family: var(--font-manrope), Arial, sans-serif;
-  font-size: clamp(5rem, 9vw, 8.5rem);
+  font-size: clamp(4.75rem, 8vw, 7.5rem);
   font-weight: 800;
   letter-spacing: -0.085em;
   line-height: 0.78;
@@ -1310,8 +1310,8 @@ a {
 .result-outcome > span,
 .result-established > span {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5rem;
+  right: 1.5rem;
   color: var(--mindmax-light-blue);
   font-size: 0.7rem;
   font-weight: 750;
@@ -1319,7 +1319,7 @@ a {
 
 .results-note {
   display: flex;
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
   justify-content: space-between;
   gap: 2rem;
   color: color-mix(in srgb, white 58%, transparent);
@@ -1442,7 +1442,7 @@ a {
 
   .hero-grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: 3.5rem;
+    gap: 2.75rem;
   }
 
   .hero-copy {
@@ -1451,13 +1451,13 @@ a {
 
   .hero-visual {
     width: min(100%, 42rem);
-    min-height: clamp(26rem, 72vw, 34rem);
+    min-height: clamp(24rem, 65vw, 30rem);
     margin-left: auto;
   }
 
   .difference-grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: 4.5rem;
+    gap: 3.5rem;
   }
 
   .difference-intro {
@@ -1668,13 +1668,13 @@ a {
   }
 
   .program-list {
-    gap: 5.5rem;
+    gap: 4.25rem;
   }
 
   .program,
   .program:nth-child(even) {
     grid-template-columns: minmax(0, 1fr);
-    gap: 2.75rem;
+    gap: 2rem;
   }
 
   .program:nth-child(even) .program-image-wrap,
@@ -1752,7 +1752,7 @@ a {
   }
 
   .foundation-subjects {
-    padding-top: 3rem;
+    padding-top: 2.25rem;
   }
 
   .exam-pathways {
