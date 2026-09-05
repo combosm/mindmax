@@ -414,21 +414,12 @@ a {
   display: flex;
   width: 48%;
   align-items: center;
-  gap: 0.75rem;
   color: var(--mindmax-navy);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.35;
   text-transform: uppercase;
-}
-
-.hero-note span {
-  color: var(--mindmax-red);
-  font-family: var(--font-manrope), Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
 }
 
 .difference {
@@ -709,30 +700,6 @@ a {
   object-fit: cover;
 }
 
-.program-index {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  bottom: 0.5rem;
-  display: grid;
-  width: 4.5rem;
-  aspect-ratio: 1;
-  border-radius: 50% 50% 0.5rem 50%;
-  background: var(--mindmax-navy);
-  color: white;
-  font-family: var(--font-manrope), Arial, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 800;
-  place-items: center;
-}
-
-.program:nth-child(even) .program-index {
-  right: auto;
-  left: 0;
-  border-radius: 50% 50% 50% 0.5rem;
-  background: var(--mindmax-red);
-}
-
 .program-content {
   min-width: 0;
 }
@@ -918,13 +885,6 @@ a {
   text-transform: uppercase;
 }
 
-.pathway-heading span {
-  color: var(--mindmax-red);
-  font-family: var(--font-manrope), Arial, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 800;
-}
-
 .foundation-pathway h3,
 .exam-header h3 {
   margin-top: 1rem;
@@ -1015,16 +975,9 @@ a {
   border-left: 1px solid var(--mindmax-border);
 }
 
-.exam-index {
-  color: var(--mindmax-red);
-  font-family: var(--font-manrope), Arial, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
 .exam-program h4 {
   max-width: 13ch;
-  margin-top: 0.75rem;
+  margin-top: 0;
   font-size: clamp(1.5rem, 2.4vw, 2.1rem);
   font-weight: 750;
   letter-spacing: -0.04em;
@@ -1305,16 +1258,6 @@ a {
 
 .result-outcome:first-child dd {
   color: var(--mindmax-red);
-}
-
-.result-outcome > span,
-.result-established > span {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  color: var(--mindmax-light-blue);
-  font-size: 0.7rem;
-  font-weight: 750;
 }
 
 .results-note {
@@ -1702,11 +1645,6 @@ a {
     border-radius: 3.5rem 0.5rem 0.5rem 0.5rem;
   }
 
-  .program-index {
-    width: 3.75rem;
-    bottom: 0;
-  }
-
   .program-content h3 {
     font-size: clamp(2.25rem, 10vw, 3rem);
   }
@@ -1803,11 +1741,6 @@ a {
     font-size: clamp(5.5rem, 30vw, 8rem);
   }
 
-  .result-outcome > span,
-  .result-established > span {
-    top: 1.5rem;
-    right: 0;
-  }
 
   .results-note {
     flex-direction: column;

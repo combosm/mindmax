@@ -26,18 +26,16 @@ export function Results() {
         </header>
 
         <dl className="results-record" id="results-record">
-          {historicalResults.map((result, index) => (
+          {historicalResults.map((result) => (
             <div className="result-outcome" key={result.label}>
               <dt>{result.label}</dt>
               <dd>{result.value}</dd>
-              <span aria-hidden="true">0{index + 1}</span>
             </div>
           ))}
 
           <div className="result-established">
             <dt>Established in Melbourne</dt>
             <dd>{business.establishedYear}</dd>
-            <span aria-hidden="true">03</span>
           </div>
         </dl>
 

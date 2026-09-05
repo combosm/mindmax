@@ -22,7 +22,7 @@ export function Programs() {
       </div>
 
       <div className="site-container program-list">
-        {programs.map((program, index) => (
+        {programs.map((program) => (
           <article className="program" key={program.id}>
             <div className="program-image-wrap">
               <div className="program-image">
@@ -34,9 +34,6 @@ export function Programs() {
                   sizes="(max-width: 767px) 100vw, 52vw"
                 />
               </div>
-              <span className="program-index" aria-hidden="true">
-                {String(index + 1).padStart(2, "0")}
-              </span>
             </div>
 
             <div className="program-content">

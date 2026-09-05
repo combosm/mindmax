@@ -49,7 +49,6 @@ export function Hero() {
               />
             </div>
             <p className="hero-note">
-              <span aria-hidden="true">01</span>
               Support that stays with them
             </p>
           </div>

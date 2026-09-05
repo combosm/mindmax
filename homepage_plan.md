@@ -567,6 +567,8 @@ READY FOR REVIEW — 2026-09-03
 - tightened homepage section spacing and internal content rhythm across desktop and mobile
 - clarified section transitions through the approved ivory, navy and ice-blue surfaces
 - reduced excess spacing within learning-format and curriculum content
+- removed decorative numbering from the hero, results, learning formats and curriculum
+- retained numbering only for the ordered Beyond the Classroom support process
 - presented the supported selective school, scholarship and establishment claims at editorial scale
 - reused central business and historical results data without strengthening the approved claims
 - added visible historical-outcomes and non-guarantee wording

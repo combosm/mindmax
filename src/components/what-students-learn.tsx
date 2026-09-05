@@ -24,7 +24,6 @@ export function WhatStudentsLearn() {
         <article className="foundation-pathway">
           <div className="pathway-heading">
             <p>{regularProgram.label}</p>
-            <span aria-hidden="true">01</span>
           </div>
           <h3>{regularProgram.name}</h3>
           <p className="pathway-description">{regularProgram.description}</p>
@@ -48,11 +47,8 @@ export function WhatStudentsLearn() {
           </div>
 
           <div className="exam-program-list">
-            {examPreparationPrograms.map((program, index) => (
+            {examPreparationPrograms.map((program) => (
               <article className="exam-program" key={program.id}>
-                <span className="exam-index" aria-hidden="true">
-                  {String(index + 2).padStart(2, "0")}
-                </span>
                 <h4>{program.name}</h4>
                 <p>{program.description}</p>
               </article>
