@@ -5,7 +5,7 @@ export const historicalResults = [
   },
   {
     value: "45+",
-    label: "School Scholarships",
+    label: "Scholarship Offers",
   },
 ] as const;
 

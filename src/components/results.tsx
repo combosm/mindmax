@@ -12,23 +12,18 @@ export function Results() {
 
       <div className="site-container results-inner">
         <header className="results-heading">
-          <p className="eyebrow results-eyebrow">Historical student outcomes</p>
+          <p className="eyebrow results-eyebrow">Student results</p>
           <h2 id="results-title" className="results-title">
             Where focused work
             <span>can lead.</span>
           </h2>
           <div className="results-context">
             <p>
-              MindMax students have received offers from selective entry and independent
-              schools across Melbourne.
+              MindMax students have achieved strong outcomes through structured programs
+              and focused preparation.
             </p>
-            <a href="#results-record">
-              See our results <span aria-hidden="true">↓</span>
-            </a>
           </div>
         </header>
-
-        <SchoolCarousel />
 
         <dl className="results-record" id="results-record">
           {historicalResults.map((result, index) => (
@@ -41,12 +36,12 @@ export function Results() {
 
           <div className="result-established">
             <dt>Established in Melbourne</dt>
-            <dd>
-              <span>Since</span>
-              {business.establishedYear}
-            </dd>
+            <dd>{business.establishedYear}</dd>
+            <span aria-hidden="true">03</span>
           </div>
         </dl>
+
+        <SchoolCarousel />
 
         <footer className="results-note">
           <p>{resultsDisclaimer}</p>

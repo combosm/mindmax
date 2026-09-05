@@ -11,10 +11,10 @@ export default function Home() {
       <SiteHeader />
       <main id="main-content">
         <Hero />
-        <MindMaxDifference />
+        <Results />
         <Programs />
         <WhatStudentsLearn />
-        <Results />
+        <MindMaxDifference />
       </main>
     </div>
   );

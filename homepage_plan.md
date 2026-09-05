@@ -22,6 +22,15 @@ Do not skip ahead unless explicitly instructed.
 
 # Project Status
 
+## Approved Homepage Journey
+
+1. Hero
+2. Student Results / Historical Outcomes
+3. Choose How They Learn
+4. What Students Learn
+5. Beyond the Classroom Support
+6. Final CTA and Footer (not yet implemented)
+
 Current Phase:
 PHASE 6 — Results
 
@@ -210,22 +219,10 @@ Prefer:
 
 ---
 
-### Hero Proof
+### Results Placement
 
-Include:
-
-100+
-Selective School Offers
-
-45+
-School Scholarships
-
-Since
-2012
-
-Do not place these inside three identical cards.
-
-Use large typography and clean dividers.
+The dedicated Results section sits directly below the hero so historical proof is visible
+early without duplicating the same statistics inside the hero.
 
 ---
 
@@ -235,7 +232,7 @@ Desktop:
 
 - hero feels premium and editorial
 - major value proposition visible immediately
-- results visible above or near fold
+- dedicated results section follows the hero
 - red is restrained
 - imagery does not feel generic
 
@@ -244,7 +241,7 @@ Mobile:
 - headline remains impactful
 - CTA remains obvious
 - image composition simplifies cleanly
-- statistics remain readable
+- transition into the results section remains clear
 - navigation works properly
 
 Technical:
@@ -265,7 +262,7 @@ APPROVED — 2026-09-02
 - added a keyboard-accessible responsive mobile navigation with escape-key support
 - created the editorial hero with approved headline, supporting copy and enquiry pathways
 - added an original education-focused hero photograph and restrained MindMax-inspired geometry
-- integrated historical results and establishment date as a divided proof band
+- moved historical results out of the hero and into the dedicated Results section
 - refined layouts for mobile, tablet and desktop breakpoints
 - lint, typecheck and production build pass
 
@@ -564,7 +561,9 @@ READY FOR REVIEW — 2026-09-03
 
 ## Completion Notes
 
-- created a dedicated dark results field distinct from the compact hero proof band
+- placed the dedicated dark results field directly below the hero and removed the duplicate hero proof band
+- ordered the section so the large statistics precede the school-logo carousel
+- standardised all three statistics to the same scale, weight, alignment and spacing
 - presented the supported selective school, scholarship and establishment claims at editorial scale
 - reused central business and historical results data without strengthening the approved claims
 - added visible historical-outcomes and non-guarantee wording

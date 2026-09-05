@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 import { ButtonLink } from "@/components/ui/button";
-import { business } from "@/data/business";
-import { historicalResults, resultsDisclaimer } from "@/data/results";
 
 export function Hero() {
   return (
@@ -57,24 +55,6 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="site-container proof-wrap" id="hero-proof">
-          <p className="proof-kicker">A proven record</p>
-          <dl className="proof-list">
-            {historicalResults.map((result) => (
-              <div className="proof-item" key={result.label}>
-                <dt>{result.label}</dt>
-                <dd>{result.value}</dd>
-              </div>
-            ))}
-            <div className="proof-item proof-since">
-              <dt>Established in Melbourne</dt>
-              <dd>
-                <span>Since</span> {business.establishedYear}
-              </dd>
-            </div>
-          </dl>
-          <p className="sr-only">{resultsDisclaimer}</p>
-        </div>
     </section>
   );
 }
