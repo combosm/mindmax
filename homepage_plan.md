@@ -39,6 +39,9 @@ Do not skip ahead unless explicitly instructed.
 Current Phase:
 PHASE 15 — Content Verification
 
+Next Planned Phase:
+PHASE 16 — Resources Page and Education Tools
+
 Status:
 READY FOR REVIEW — 2026-09-19
 
@@ -1141,6 +1144,125 @@ READY FOR REVIEW — 2026-09-19
 - confirmed no pricing, schedules, availability, awards, success rates or guarantees are published
 - confirmed no testimonial has been invented; the empty state remains explicitly labelled pending verified content
 - lint, typecheck and production build pass
+
+---
+
+# PHASE 16 — Resources Page and Education Tools
+
+## Objective
+
+Create a dedicated Resources destination that provides genuinely useful education-planning tools while remaining clear about their scope, data sources and limitations.
+
+This phase must not imply that MindMax currently provides VCE tutoring or scholarship application services unless that business offering is separately verified.
+
+## Navigation and Routing
+
+- add `Resources` to the desktop and mobile primary navigation
+- create a dedicated `/resources` page
+- ensure homepage anchor links continue to work when followed from `/resources`
+- add an appropriate Resources link to the footer
+- include the page in sitemap and metadata where appropriate
+
+## Resource 1 — Victorian VCE ATAR Calculator
+
+### Scope
+
+- support the Victorian VCE system only unless another jurisdiction is explicitly approved
+- identify the calculation year prominently
+- explain that the result is an estimate and is not an official VTAC result
+- link to the authoritative methodology and data sources used
+- never present an estimated ATAR as guaranteed
+
+### Required Research and Inputs
+
+- verify the current VTAC aggregate and ATAR calculation methodology
+- obtain lawful, authoritative subject-scaling data for the supported year
+- identify all relevant subject rules, increments and exclusions
+- establish how aggregate-to-ATAR conversion will be sourced or estimated
+- record source URLs, publication dates and the date data was last checked
+- confirm whether historical years will be supported or only the latest complete data year
+
+### Technical Direction
+
+- keep subject and scaling data separate from UI code
+- strongly type calculation inputs, subject records and outputs
+- validate duplicate subjects, score ranges and subject-count rules
+- provide accessible input labels, errors and keyboard interaction
+- make calculation assumptions visible alongside the result
+- include automated tests for boundary cases and known examples where authoritative examples exist
+
+## Resource 2 — Scholarships Near Me Finder
+
+### Scope
+
+- initially focus on relevant Victorian school scholarships
+- use a suburb or postcode entered by the user; do not require browser location access
+- allow useful filters such as student entry year, scholarship type and application status when verified data supports them
+- direct users to the school's official scholarship page for current details and applications
+
+### Required Research and Inputs
+
+- define the geographic coverage and eligible school types
+- compile each school's name, campus address, coordinates and official website
+- compile scholarship type, eligible entry year levels, application dates, status and official source URL
+- distinguish verified facts from unavailable information
+- record the date each listing was last checked
+- define an update and expiry process because application dates change
+- confirm whether listings are informational only or may include commercial relationships in future
+
+### Technical Direction
+
+- keep scholarship and school records in typed data files or an approved external data source
+- calculate proximity from the entered suburb or postcode without storing precise user location
+- provide list results even if a map is not used
+- ensure distance is described as approximate where appropriate
+- handle incomplete, expired and undated opportunities honestly
+- include accessible empty, loading and error states
+
+## Page Design Direction
+
+- follow `design.md` and remain recognisably MindMax
+- use editorial hierarchy and clear tool sections rather than a generic dashboard or repeated card grid
+- make the ATAR calculator's older-student relevance clear without changing the site's primary Grades 3–6 positioning
+- use restrained red for actions and warnings, with navy and warm ivory carrying the page
+- design the tools intentionally for 375px, 430px, 768px, 1024px and 1440px widths
+
+## Privacy, Accuracy and Maintenance
+
+- do not collect or retain student names, scores, addresses or precise location data
+- add plain-language disclaimers for estimates and changing third-party information
+- publish a `last reviewed` date for time-sensitive datasets
+- prefer official Victorian and school sources over aggregators
+- do not scrape or reproduce data where licensing or terms do not permit it
+- document how scaling and scholarship data should be refreshed
+
+## Delivery Stages
+
+1. research authoritative sources and document the proposed calculation/data model
+2. obtain approval for scope, methodology, disclaimers and scholarship coverage
+3. implement the Resources page, navigation and static content structure
+4. implement and test the ATAR calculator
+5. compile the initial verified scholarship dataset and implement the finder
+6. complete responsive, accessibility, privacy, content and technical QA
+
+Do not publish either tool with placeholder calculations or unverified scholarship claims.
+
+## Acceptance Criteria
+
+- Resources is available from desktop and mobile navigation
+- `/resources` has appropriate metadata and a clear heading hierarchy
+- the calculator identifies its state, data year, sources, assumptions and estimate status
+- calculator validation and calculation tests pass
+- scholarship results are backed by official sources and show last-reviewed information
+- user location and student data are not retained
+- the page works without horizontal overflow at all target widths
+- keyboard use, focus states, labels, errors and touch targets are accessible
+- lint, typecheck and production build pass
+- desktop and mobile layouts have been visually inspected
+
+## Status
+
+PLANNED — awaiting research, scope approval and source data
 
 ---
 

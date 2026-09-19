@@ -28,6 +28,8 @@ Before making any frontend or visual change, read:
 2. `design.md`
 3. the relevant planning document, such as `HOMEPAGE_PLAN.md`
 
+For any request involving Resources, an ATAR calculator or a scholarship finder, also read `RESOURCES_FEATURE_BRIEF.md` before planning, researching or implementing the feature.
+
 `design.md` is the source of truth for visual decisions once it exists.
 
 Do not override the approved design system unless explicitly instructed.
