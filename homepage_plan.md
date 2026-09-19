@@ -932,9 +932,16 @@ Use a substantial navy footer.
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-19
 
 ## Completion Notes
+
+- added a strong blue final CTA with verified phone and WhatsApp enquiry paths
+- added a substantial navy footer with program, journey, results, FAQ and location navigation
+- centralised the supplied phone number and added supplied street addresses to location data
+- included established-since-2012 context without inventing social or legal links
+- created responsive two-column and single-column footer layouts
+- lint, typecheck and production build pass
 
 ---
 

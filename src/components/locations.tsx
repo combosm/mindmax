@@ -22,6 +22,7 @@ export function Locations() {
               <div>
                 <h3>{location.name}</h3>
                 <p>{location.kind === "online" ? "Live online learning" : "Face-to-face classes"}</p>
+                {location.address ? <address>{location.address}</address> : null}
               </div>
               <span className="location-arrow" aria-hidden="true">
                 →

@@ -7,6 +7,7 @@ import { ParentProgress } from "@/components/parent-progress";
 import { Programs } from "@/components/programs";
 import { Results } from "@/components/results";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import { Testimonials } from "@/components/testimonials";
 import { WhatStudentsLearn } from "@/components/what-students-learn";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Locations />
         <Faq />
       </main>
+      <SiteFooter />
     </div>
   );
 }
