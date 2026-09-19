@@ -73,6 +73,7 @@ export function SiteHeader() {
           className="mobile-nav"
           aria-label="Mobile navigation"
           aria-hidden={!isOpen}
+          inert={!isOpen}
           data-open={isOpen}
         >
           <div className="site-container mobile-nav-inner">
