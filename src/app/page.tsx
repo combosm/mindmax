@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero";
 import { HowItWorks } from "@/components/how-it-works";
+import { Locations } from "@/components/locations";
 import { MindMaxDifference } from "@/components/mindmax-difference";
 import { ParentProgress } from "@/components/parent-progress";
 import { Programs } from "@/components/programs";
@@ -21,6 +22,7 @@ export default function Home() {
         <HowItWorks />
         <ParentProgress />
         <Testimonials />
+        <Locations />
       </main>
     </div>
   );

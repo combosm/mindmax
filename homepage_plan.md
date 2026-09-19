@@ -798,9 +798,15 @@ Avoid excessive cards.
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-19
 
 ## Completion Notes
+
+- added a compact, typographic locations section with distinct in-person and online labels
+- sourced Hoppers Crossing, South Yarra and Online Classes from the central locations data file
+- did not add unsupported addresses, availability, waitlist status or schedules
+- created responsive desktop and mobile layouts without location cards
+- lint, typecheck and production build pass
 
 ---
 
