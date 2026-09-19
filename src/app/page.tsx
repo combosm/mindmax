@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { Faq } from "@/components/faq";
 import { HowItWorks } from "@/components/how-it-works";
 import { Locations } from "@/components/locations";
 import { MindMaxDifference } from "@/components/mindmax-difference";
@@ -23,6 +24,7 @@ export default function Home() {
         <ParentProgress />
         <Testimonials />
         <Locations />
+        <Faq />
       </main>
     </div>
   );

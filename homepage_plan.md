@@ -845,9 +845,15 @@ Avoid:
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-19
 
 ## Completion Notes
+
+- added eight parent-focused FAQs sourced from approved business and program information
+- used semantic native disclosure controls for keyboard and screen-reader accessibility
+- added visible focus treatment, generous touch targets and reduced-motion handling
+- kept FAQ content in a typed data file for simple future updates
+- lint, typecheck and production build pass
 
 ---
 
