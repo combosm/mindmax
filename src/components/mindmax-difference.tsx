@@ -2,7 +2,7 @@ import { supportFeatures } from "@/data/support";
 
 export function MindMaxDifference() {
   return (
-    <section className="difference" id="how-it-works" aria-labelledby="difference-title">
+    <section className="difference" id="beyond-the-classroom" aria-labelledby="difference-title">
       <div className="difference-accent" aria-hidden="true" />
       <div className="site-container difference-grid">
         <div className="difference-intro">

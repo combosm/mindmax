@@ -29,13 +29,14 @@ Do not skip ahead unless explicitly instructed.
 3. Choose How They Learn
 4. What Students Learn
 5. Beyond the Classroom Support
-6. Final CTA and Footer (not yet implemented)
+6. How It Works (ready for review)
+7. Final CTA and Footer (not yet implemented)
 
 Current Phase:
-PHASE 6 — Results
+PHASE 7 — How It Works
 
 Status:
-READY FOR REVIEW — 2026-09-03
+READY FOR REVIEW — 2026-09-08
 
 Last Approved Phase:
 PHASE 5 — What Students Learn
@@ -638,9 +639,17 @@ six isolated feature cards.
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-08
 
 ## Completion Notes
+
+- implemented the six-step learning journey after Beyond the Classroom support
+- connected desktop steps with a horizontal pathway and used a vertical timeline on tablet and mobile
+- reused existing classroom photography and kept learning-step content in a typed data file
+- moved the How It Works navigation target to the new section with sticky-header clearance
+- retained Phase 6's review status and the last explicitly approved phase
+- inspected all five target widths (375, 430, 768, 1024 and 1440px); no horizontal overflow
+- lint, typecheck and production build pass
 
 ---
 
