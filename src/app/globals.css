@@ -1889,6 +1889,10 @@ a {
   margin-top: 2.25rem;
 }
 
+.final-cta-actions a:last-child {
+  color: var(--mindmax-navy);
+}
+
 .site-footer {
   padding-top: clamp(4rem, 7vw, 6rem);
   background: #071f50;
