@@ -5,6 +5,7 @@ import { ParentProgress } from "@/components/parent-progress";
 import { Programs } from "@/components/programs";
 import { Results } from "@/components/results";
 import { SiteHeader } from "@/components/site-header";
+import { Testimonials } from "@/components/testimonials";
 import { WhatStudentsLearn } from "@/components/what-students-learn";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <MindMaxDifference />
         <HowItWorks />
         <ParentProgress />
+        <Testimonials />
       </main>
     </div>
   );

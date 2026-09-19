@@ -750,9 +750,15 @@ Possible layout:
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-19
 
 ## Completion Notes
+
+- added a typed testimonials data source ready for verified quotes
+- added an editorial social-proof section with an explicit verified-stories placeholder
+- did not invent testimonials, identities, ratings or outcomes
+- included semantic figure, blockquote and attribution markup for future populated content
+- lint, typecheck and production build pass
 
 ---
 
