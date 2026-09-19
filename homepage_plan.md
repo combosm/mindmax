@@ -704,9 +704,15 @@ Potential visual:
 
 ## Status
 
-NOT STARTED
+READY FOR REVIEW — 2026-09-19
 
 ## Completion Notes
+
+- added a light, report-inspired parent progress section after the learning journey
+- used only supported evidence: graded work, teacher correction, feedback and assessment outcomes
+- kept the content in a typed data file for straightforward future updates
+- avoided implying an existing parent portal or unsupported reporting technology
+- lint, typecheck and production build pass
 
 ---
 

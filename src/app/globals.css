@@ -1435,6 +1435,109 @@ a {
   }
 }
 
+.parent-progress {
+  padding-block: clamp(5rem, 9vw, 8rem);
+  background: var(--mindmax-ice-blue);
+}
+
+.parent-progress-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(28rem, 1.1fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.parent-progress-title {
+  max-width: 12ch;
+  margin-top: 1.5rem;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+}
+
+.parent-progress-title span {
+  color: var(--mindmax-red);
+}
+
+.parent-progress-summary {
+  max-width: 36rem;
+  margin-top: 1.75rem;
+  color: var(--mindmax-muted);
+  font-size: 1.0625rem;
+}
+
+.progress-record {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-top: 0.3rem solid var(--mindmax-blue);
+  background: var(--mindmax-white);
+  box-shadow: 0 1.5rem 4rem color-mix(in srgb, var(--mindmax-navy) 9%, transparent);
+}
+
+.progress-record-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--mindmax-border);
+  color: var(--mindmax-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.progress-signal-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.progress-signal-list li {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--mindmax-border);
+}
+
+.progress-signal-index {
+  color: var(--mindmax-red);
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-weight: 800;
+}
+
+.progress-signal-list h3 {
+  font-size: 1.25rem;
+}
+
+.progress-signal-list p {
+  margin-top: 0.35rem;
+  color: var(--mindmax-muted);
+  line-height: 1.55;
+}
+
+.progress-record-note {
+  margin-top: 1.5rem;
+  color: var(--mindmax-navy);
+  font-weight: 700;
+}
+
+@media (max-width: 64rem) {
+  .parent-progress-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parent-progress-copy {
+    max-width: 46rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .progress-signal-list li {
+    grid-template-columns: 2rem minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 68rem) {
   .desktop-nav {
     gap: 1rem;
