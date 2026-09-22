@@ -1997,37 +1997,59 @@ a {
 
   .menu-toggle {
     position: relative;
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    padding: 0;
-    border: 1px solid var(--mindmax-border);
-    border-radius: var(--radius-md);
-    background: transparent;
+    display: inline-flex;
+    min-width: 5.25rem;
+    min-height: 2.75rem;
+    padding: 0 0.9rem;
+    border: 1px solid color-mix(in srgb, var(--mindmax-navy) 18%, transparent);
+    border-radius: 999px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.65rem;
+    grid-column: 3;
+    justify-self: end;
+    background: var(--mindmax-white);
+    box-shadow: 0 0.2rem 0.8rem color-mix(in srgb, var(--mindmax-navy) 7%, transparent);
     color: var(--mindmax-navy);
     cursor: pointer;
   }
 
-  .menu-toggle span {
+  .menu-label {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .menu-icon {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+  }
+
+  .menu-icon span {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1.2rem;
+    width: 1rem;
     height: 2px;
+    border-radius: 999px;
     background: currentColor;
     transform: translate(-50%, -0.28rem);
     transition: transform 180ms ease;
   }
 
-  .menu-toggle span:last-child {
+  .menu-icon span:last-child {
     transform: translate(-50%, 0.28rem);
   }
 
-  .menu-toggle[aria-expanded="true"] span:first-child {
+  .menu-toggle[aria-expanded="true"] .menu-icon span:first-child {
     transform: translate(-50%, 0) rotate(45deg);
   }
 
-  .menu-toggle[aria-expanded="true"] span:last-child {
+  .menu-toggle[aria-expanded="true"] .menu-icon span:last-child {
     transform: translate(-50%, 0) rotate(-45deg);
   }
 
@@ -2060,11 +2082,23 @@ a {
   }
 
   .mobile-nav-inner > a:not(:last-child) {
-    padding: 0.85rem 0;
+    display: flex;
+    min-height: 3.5rem;
+    padding: 0.9rem 0;
     border-bottom: 1px solid var(--mindmax-border);
+    align-items: center;
+    justify-content: space-between;
     color: var(--mindmax-navy);
-    font-weight: 650;
+    font-family: var(--font-manrope), Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
     text-decoration: none;
+  }
+
+  .mobile-nav-inner > a:not(:last-child)::after {
+    color: var(--mindmax-red);
+    content: "→";
+    font-size: 1.1rem;
   }
 
   .mobile-nav-inner > a:last-child {
@@ -2174,8 +2208,30 @@ a {
 }
 
 @media (max-width: 47.999rem) {
+  :root {
+    --container-gutter: clamp(1rem, 5.25vw, 1.4rem);
+    --section-space: clamp(4rem, 17vw, 5.5rem);
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  .header-inner {
+    min-height: 4.5rem;
+  }
+
+  .brand-link {
+    width: clamp(9.5rem, 43vw, 11rem);
+  }
+
+  .mobile-nav {
+    box-shadow: 0 1.2rem 2.5rem color-mix(in srgb, var(--mindmax-navy) 12%, transparent);
+  }
+
   .hero {
-    padding-top: 2.25rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   .hero-title {
@@ -2200,7 +2256,7 @@ a {
   }
 
   .hero-visual {
-    min-height: clamp(21rem, 100vw, 27rem);
+    min-height: clamp(19.5rem, 94vw, 25rem);
   }
 
   .hero-image-primary {
@@ -2220,14 +2276,21 @@ a {
   }
 
   .hero-geometry {
-    right: -2.5rem;
-    width: 78%;
-    height: 52%;
+    right: -1.25rem;
+    bottom: 0.75rem;
+    width: 68%;
+    height: 42%;
+    border-width: 0.85rem;
+  }
+
+  .hero-visual::after {
+    display: none;
   }
 
   .hero-note {
-    bottom: 0.6rem;
-    width: 54%;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    width: 51%;
     font-size: 0.65rem;
   }
 
@@ -2236,8 +2299,7 @@ a {
   }
 
   .difference::before {
-    top: -10rem;
-    right: -12rem;
+    display: none;
   }
 
   .difference-grid {
@@ -2403,6 +2465,12 @@ a {
     font-size: clamp(2.65rem, 11vw, 3.75rem);
   }
 
+  .results-geometry,
+  .learning::after,
+  .final-cta-mark {
+    display: none;
+  }
+
   .results-context {
     margin-top: 2.25rem;
   }
@@ -2457,6 +2525,21 @@ a {
   .school-logo-item img {
     max-width: 8.5rem;
     height: 4.5rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .menu-toggle {
+    min-width: 4.75rem;
+    padding-inline: 0.75rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.65rem, 12.2vw, 3rem);
+  }
+
+  .hero-note {
+    width: 55%;
   }
 }
 

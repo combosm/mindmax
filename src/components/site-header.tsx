@@ -63,8 +63,13 @@ export function SiteHeader() {
             aria-label={isOpen ? "Close navigation" : "Open navigation"}
             onClick={() => setIsOpen((open) => !open)}
           >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
+            <span className="menu-label" aria-hidden="true">
+              {isOpen ? "Close" : "Menu"}
+            </span>
+            <span className="menu-icon" aria-hidden="true">
+              <span />
+              <span />
+            </span>
           </button>
         </div>
 
